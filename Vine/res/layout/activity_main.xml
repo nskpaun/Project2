@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/texture" >
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/welcomeMsg"
+        tools:context=".MainActivity" />
+
+    <ImageView
+        android:id="@+id/clearRect"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/clearrect" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearRect"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/searchBox"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/searchbox" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchBox"
+        android:layout_alignLeft="@+id/searchBox"
+        android:layout_alignRight="@+id/map"
+        android:layout_marginBottom="23dp"
+        android:background="@null"
+        android:ems="10"
+        android:singleLine="true"
+        android:textSize="32dp" 
+        android:cursorVisible="false">
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBox"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/searchbutton" />
+
+</RelativeLayout>

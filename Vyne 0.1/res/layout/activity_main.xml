@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/toprect" >
+
+        <ImageButton
+            android:id="@+id/compass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@null"
+            android:src="@drawable/searchgrey"
+            android:onClick="onCompassClick" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:background="@null"
+            android:onClick="onFourClick"
+            android:src="@drawable/profileimagewhite" />
+        
+        <ImageButton
+            android:id="@+id/house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="83dp"
+            android:background="@null"
+            android:onClick="onHouseClick"
+            android:src="@drawable/house" />
+                
+        <ImageButton
+            android:id="@+id/mapicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@null"
+            android:onClick="onMapClick"
+            android:src="@drawable/mapbuttongrey" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mybanner" >
+	        <RelativeLayout
+	            android:id="@+id/feedView"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" >
+	        </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/mybanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nav_bar"
+        android:background="@drawable/banneroptions" />
+    <ImageView
+        android:id="@+id/mysearchbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nav_bar"
+        android:background="@drawable/searchbar" />
+
+    
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/seachbox"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:singleLine="true"
+        android:textSize="16dp" />
+
+</RelativeLayout>

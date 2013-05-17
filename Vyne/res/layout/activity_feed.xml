@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutFeed"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <ImageButton
+            android:id="@+id/mapicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@null"
+            android:onClick="onMapClick"
+            android:src="@drawable/mapbuttongrey" />
+
+        <ImageView
+            android:id="@+id/demonav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topthingdemo" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/mybanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nav_bar"
+        android:background="@drawable/bannerwhite" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="265dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/seachbox"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:singleLine="true"
+        android:textSize="16dp" >
+
+        <requestFocus />
+    </EditText>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mybanner" />
+
+</RelativeLayout>

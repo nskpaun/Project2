@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/toprect" >
+        
+	<ImageButton
+            android:id="@+id/compass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@null"
+            android:onClick="onCompassClick"
+            android:src="@drawable/searchgrey" />
+        
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:background="@null"
+            android:src="@drawable/profileimage" />
+
+        <ImageButton
+            android:id="@+id/house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="84dp"
+            android:background="@null"
+            android:onClick="onHouseClick"
+            android:src="@drawable/housewhite" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/storebanner" >
+
+        <RelativeLayout
+            android:id="@+id/feedView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/storebanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/storebanner" />
+
+    <ImageView
+        android:id="@+id/searchbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+		android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/storebanner"
+        android:background="@drawable/searchbar" />
+
+    <ImageView
+        android:id="@+id/shopcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/shopcart" />
+
+    <ImageView
+        android:id="@+id/storeaddrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+		android:layout_alignParentRight="true"
+        android:src="@drawable/storeaddrect" />
+
+    <ImageView
+        android:id="@+id/followbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="180dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/followbut" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/searchbar"
+        android:layout_alignBottom="@+id/searchbar"
+        android:background="@drawable/seachbox"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:singleLine="true"
+        android:textSize="16dp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
